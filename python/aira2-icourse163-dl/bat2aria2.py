@@ -1,11 +1,16 @@
 import re
+import subprocess
+import os
 
-source = "BAT FILE"
-output = "OUTPUT FILE FOR ARIA2"
-download_dir = "VIDEO FOLDER"
+HOME = os.path.expanduser('~')
+
+source = "%s/Downloads/xxx.bat" % HOME
+output = "%s/Downloads/icourse163.aria2" % HOME
+download_dir = "%s/Downloads" % HOME
+# aria2 conf
+ARIA2_CONF_PATH = "%s/.aria2/aria2.conf" % HOME
 
 download_list_file = open(source, "r", encoding='gbk')
-# print(download_list.read())
 
 download_str = download_list_file.read()
 download_list = download_str.split(" & ")[:-1]
@@ -24,3 +29,5 @@ for i in download_list:
 
 download_list_file.close()
 aria2_download_file.close()
+
+subprocess.call("aria2c --conf-path='%s' -i '%s'" % (ARIA2_CONF_PATH, output), shell=True)
