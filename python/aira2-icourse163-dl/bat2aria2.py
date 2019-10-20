@@ -1,3 +1,7 @@
+# coding: utf-8
+# author: xavierniu
+# a tool for downloading videos from iCourse163.com by Aria2
+
 import re
 import subprocess
 import os
