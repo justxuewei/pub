@@ -1,4 +1,4 @@
-# code: utf-8
+# coding: utf-8
 # author: xavierniu
 # a tool for downloading files from Baidu Netdisk by Aria2
 
