@@ -37,7 +37,7 @@ for i in download_list:
 download_list_file.close()
 aria2_download_file.close()
 
-print("🌟🌟🌟 Download file of videos for Aria2 is created successfully at %s" % output)
+print("🌟🌟🌟 File containing video download links for Aria2 is created successfully at %s" % output)
 
 subprocess.call("aria2c --no-conf -c true --file-allocation=prealloc -i '%s'" % output, shell=True)
 
