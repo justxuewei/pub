@@ -28,8 +28,8 @@ for i in download_list:
     url = url.group(0)
     name = name.group(0)
     # inspect the name whether constains '/' that may create a sub-folder unexpectedly
-    # for example: 'I/O' -> 'I\/O'
-    name = re.sub(r'/', '\/', name)
+    # for example: 'I/O' -> 'I-O'
+    name = re.sub(r'/', '-', name)
     aria2_download_file.write("%s\n" % url)
     aria2_download_file.write("  dir=%s\n" % download_dir)
     aria2_download_file.write("  out=%s\n" % name)
