@@ -21,7 +21,6 @@ download_list = download_str.split(" & ")[:-1]
 
 aria2_download_file = open(output, "w")
 
-counter = 0
 for i in download_list:
     url = re.search(r'(?<=wget\ \").*(?=\"\ -O)', i)
     name = re.search(r'(?<=\ -O\ \").*(?=\")', i)
@@ -31,12 +30,11 @@ for i in download_list:
     aria2_download_file.write("%s\n" % url)
     aria2_download_file.write("  dir=%s\n" % download_dir)
     aria2_download_file.write("  out=%s\n" % name)
-    counter+=1
 
 download_list_file.close()
 aria2_download_file.close()
 
 print("🌟🌟🌟 Download file of videos for Aria2 is created successfully at %s" % output)
-print("🌟🌟🌟 Total: %d videos" % counter)
+print("🌟🌟🌟 Total: %d videos" % len(download_list))
 
 subprocess.call("aria2c --conf-path='%s' -i '%s'" % (ARIA2_CONF_PATH, output), shell=True)
