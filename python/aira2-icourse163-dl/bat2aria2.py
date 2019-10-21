@@ -8,7 +8,7 @@ import os
 
 HOME = os.path.expanduser('~')
 
-# replace `source`, `output` and `download_dir` depending on your circumstance
+# replace `source`, `output` and `download_dir` depending on your environment
 source = "%s/Downloads/xxx.bat" % HOME
 output = "%s/Downloads/icourse163.aria2" % HOME
 download_dir = "%s/Downloads" % HOME
