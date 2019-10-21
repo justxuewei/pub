@@ -41,6 +41,3 @@ print("🌟🌟🌟 Download file of videos for Aria2 is created successfully at
 print("🌟🌟🌟 Total: %d videos" % len(download_list))
 
 subprocess.call("aria2c --conf-path='%s' -i '%s'" % (ARIA2_CONF_PATH, output), shell=True)
-
-print("🌟🌟🌟 Download succeed! Videos are saved into %s." % source)
-exit()
