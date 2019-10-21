@@ -38,6 +38,9 @@ download_list_file.close()
 aria2_download_file.close()
 
 print("🌟🌟🌟 Download file of videos for Aria2 is created successfully at %s" % output)
-print("🌟🌟🌟 Total: %d videos" % len(download_list))
 
-subprocess.call("aria2c --conf-path='%s' -i '%s'" % (ARIA2_CONF_PATH, output), shell=True)
+subprocess.call("aria2c --no-conf -c true --file-allocation=prealloc -i '%s'" % output, shell=True)
+
+print("🌟🌟🌟 Total: %d videos" % len(download_list))
+print("🌟🌟🌟 Saved to: %s." % download_dir)
+print("🌟🌟🌟 Author: Xavier Niu")
