@@ -25,6 +25,7 @@ with open(LINK_SOURCE, 'r') as file:
         if downloaded_name is not None and real_name is not None and extension is not None:
             # handle escaped characters
             # after renamed you should find and replace "ECF8_E9hfueEC" with "/" manually
+            # the list will be shown up at the end part of this execution with prompt of "Files you should rename manually(ECF8_E9hfueEC -> /):"
             rn = re.sub(r'/', 'ECF8_E9hfueEC', real_name.group(0))
             if rn != real_name.group(0):
                 manual_handle_list.append(rn)
