@@ -13,12 +13,6 @@ import subprocess as sp
 import cfscrape
 from collections import OrderedDict
 
-boslife_url = "https://justreadtheinstructions.net"
-boslife_username = ""
-boslift_password = ""
-
-encoding = 'utf-8'
-
 user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
 headers = OrderedDict(
     (
@@ -48,6 +42,12 @@ def add_months(sourcedate, months):
 
 def perform_bash_command(command): 
     sp.check_output(command, env=my_env)
+
+boslife_url = "https://boslife.net"
+boslife_username = "YOUR_USERNAME"
+boslift_password = "YOUR_PASSWORD"
+
+encoding = 'utf-8'
 
 # save cookie for following requests
 session = requests.Session()
@@ -109,7 +109,7 @@ product_details_content = get_product_details_request.content.decode(encoding)
 # print(product_details_content)
 
 last_reset = re.search(
-    r'(?<=Last Reset : ).*?(?=<\/li>)', product_details_content)
+    r'(?<=Last Reset : ).*?(?=\ \d{1,2}:\d{1,2}<\/li>)', product_details_content)
 remaining = re.search(
     r'(?<=Remaining: )[0-9-]*(?= MB)', product_details_content)
 next_reset_date = None
