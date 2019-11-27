@@ -4,3 +4,10 @@ DOMAIN-SUFFIX,zoho.com
 DOMAIN-SUFFIX,cloudcone.com
 DOMAIN-SUFFIX,virtono.com
 DOMAIN-SUFFIX,digitalocean.com
+# > Spotify
+USER-AGENT,Spotify*
+DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spoti.fi
+IP-CIDR,35.186.224.47/32,no-resolve
