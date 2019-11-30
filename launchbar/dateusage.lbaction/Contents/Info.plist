@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>logo.png</string>
+	<string>47c9b6e9f285a6602bfa3cf079e008bc_icon.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>name.nxw.boslife</string>
+	<string>name.nxw.datausage</string>
 	<key>CFBundleName</key>
-	<string>BosLife</string>
+	<string>DataUsage</string>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
 		<string></string>
 		<key>LBEmail</key>
 		<string></string>
+		<key>LBSummary</key>
+		<string>check data usage for Boslife and BandwagonHost</string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>

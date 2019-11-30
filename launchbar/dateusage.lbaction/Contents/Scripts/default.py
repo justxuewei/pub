@@ -33,6 +33,8 @@ headers = OrderedDict(
 my_env = os.environ.copy()
 my_env["PATH"] = "/usr/local/bin:" + my_env["PATH"]
 
+encoding = 'utf-8'
+
 def add_months(sourcedate, months):
     month = sourcedate.month - 1 + months
     year = int(sourcedate.year + month / 12)
@@ -43,11 +45,43 @@ def add_months(sourcedate, months):
 def perform_bash_command(command): 
     sp.check_output(command, env=my_env)
 
-boslife_url = "https://boslife.net"
-boslife_username = "YOUR_USERNAME"
-boslift_password = "YOUR_PASSWORD"
+# >>> FOR BANDWAGONHOST: If you aren't intended to check the data usage on bandwagonhost, just delete following the code until the comment which one line starts by "FOR BOSLIFE".
+VEID = 'YOUR VEID'
+API_KEY = 'YOUR API KEY'
 
-encoding = 'utf-8'
+
+function = {
+    'get_service_info': 'getServiceInfo'
+}
+
+
+def api(func, veid, key):
+    return 'https://api.64clouds.com/v1/%s?veid=%s&api_key=%s' % (func, veid, key)
+
+
+api = requests.get(api(function['get_service_info'], VEID, API_KEY))
+data = json.loads(api.content.decode(encoding))
+
+dmul = int(data['monthly_data_multiplier'])
+dpermon = float(data['plan_monthly_data']) * dmul
+dcter = float(data['data_counter']) * dmul
+nxtrsetdate = datetime.datetime.fromtimestamp(int(data['data_next_reset']))
+diff = nxtrsetdate - datetime.datetime.now()
+
+usgpct = (dcter / dpermon) * 100
+dtranmsg = 'Used: %.2f GB/%.2f GB; Ratio: %.2f %%\nResets: %s (%s days left)' % ((dcter / 1024 / 1024 / 1024), (dpermon / 1024 / 1024 / 1024), usgpct, nxtrsetdate.strftime("%Y-%m-%d"), diff.days)
+
+perform_bash_command(["terminal-notifier",
+              "-title", "BandwagonHost",
+              "-message", dtranmsg,
+              "-sound", "default",
+              "-open", "https://bandwagonhost.com",
+              "-ignoreDnD"])
+
+# >>> FOR BOSLIFE: If you aren't intended to check the data usage on boslife, just delete following the code.  
+boslife_url = "https://boslife.net"
+boslife_username = "YOUR BOSLIFE USERNAME"
+boslift_password = "YOUR BOSLIFE PASSWORD"
 
 # save cookie for following requests
 session = requests.Session()
@@ -94,7 +128,6 @@ else:
     perform_bash_command(["terminal-notifier",
               "-title", "BosLife",
               "-message", __message,
-              "-appIcon", "https://boslife.info/images/icon.png",
               "-sound", "default",
               "-open", "https://boslife.info/index.html",
               "-ignoreDnD"])
@@ -112,6 +145,9 @@ last_reset = re.search(
     r'(?<=Last Reset : ).*?(?=\ \d{1,2}:\d{1,2}<\/li>)', product_details_content)
 remaining = re.search(
     r'(?<=Remaining: )[0-9-]*(?= MB)', product_details_content)
+used = re.search(
+    r'(?<=Used: )[0-9-]*(?= MB)', product_details_content
+)
 next_reset_date = None
 if last_reset.group(0) == "No Data":
     next_reset_date = "No Data"
@@ -119,24 +155,26 @@ else:
     last_reset = last_reset.group(0)
     # print(last_reset)
     next_reset_date = add_months(datetime.date(
-        *(int(s) for s in last_reset.split('-'))), 1).strftime("%Y-%m-%d")
+        *(int(s) for s in last_reset.split('-'))), 1)
     # print(next_reset_date)
 
-if remaining is not None:
-    _remaining = float(remaining.group(0))
-    if remaining >= 1000:
-        remaining = ("%.2f" % (_remaining / 1000)) + "GB"
-    else:
-        remaining = ("%.2f" % _remaining) + "MB"
+def data_usage(ustr):
+    if ustr is not None:
+        return float(ustr.group(0))
+    return None
+
+remaining = data_usage(remaining)
+used = data_usage(used)
+total = remaining + used
+used_str = '%.2f GB' % (used / 1000) if used >= 1000 else '%.2f MB' % used
+total_str = '%.2f GB' % (total / 1000) if total >= 1000 else '%.2f MB' % total
 # print(next_reset_date, remaining)
 
 # my_command = "terminal-notifier -title 'BosLife' -message 'Remaining Traffic: %s; Next Reset Date: %s' -appIcon https://boslife.info/images/icon.png  -sound default" % (remaining, next_reset_date)
 perform_bash_command(["terminal-notifier",
               "-title", "BosLife",
-              "-message", "RT: %s; NRD: %s.\nClick here to check out!" % (
-                  remaining, next_reset_date),
-              "-appIcon", "https://boslife.info/images/icon.png",
+              "-message", "Used: %s/%s; Ratio: %.2f %%\nResets: %s (%s days left)" % (
+                  used_str, total_str, (used/total * 100), next_reset_date.strftime("%Y-%m-%d"), (next_reset_date - datetime.date.today()).days),
               "-sound", "default",
               "-open", "https://boslife.info/index.html",
               "-ignoreDnD"])
-
