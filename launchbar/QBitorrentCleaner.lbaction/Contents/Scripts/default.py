@@ -3,7 +3,15 @@ import re
 import shutil
 import json
 
-DIR = ""
+DIR = "/Volumes/downloads"
+
+if not os.path.isdir(DIR):
+    print(json.dumps([
+        {
+            "title": "Volume NAS isn't mounted."
+        }
+    ]))
+    exit()
 
 empty_dir_deletion_queue = []
 # list all items in DIR
