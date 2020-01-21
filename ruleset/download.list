@@ -4,5 +4,8 @@ DOMAIN,download.developer.apple.com
 # > ubuntu download mirror
 DOMAIN,mirror.sov.uk.goscomb.net
 
-# > temp
+# > for macOS 10.13.6 dmg downloads
+DOMAIN-SUFFIX,tchspt.com
+
+# > other
 DOMAIN,yun.zte.cn.com
