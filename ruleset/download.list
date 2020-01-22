@@ -4,8 +4,5 @@ DOMAIN,mirror.sov.uk.goscomb.net
 # > for macOS 10.13.6 dmg downloads
 DOMAIN-SUFFIX,tchspt.com
 
-# > jetbrains
-PROCESS-NAME,JetBrains Toolbox
-
 # > other
 DOMAIN,yun.zte.cn.com
