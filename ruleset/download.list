@@ -5,8 +5,7 @@ DOMAIN,mirror.sov.uk.goscomb.net
 DOMAIN-SUFFIX,tchspt.com
 
 # > jetbrains
-DOMAIN,download.jetbrains.8686c.com.com
-DOMAIN,download-cf.jetbrains.com
+PROCESS-NAME,JetBrains Toolbox
 
 # > other
 DOMAIN,yun.zte.cn.com
