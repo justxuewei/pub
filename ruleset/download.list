@@ -1,14 +1,10 @@
 # > ubuntu download mirror
 DOMAIN,mirror.sov.uk.goscomb.net
-
 # > for macOS 10.13.6 dmg downloads
 DOMAIN-SUFFIX,tchspt.com
-
 # > docker
 DOMAIN,download.docker.com
-
 # > other
 DOMAIN,yun.zte.cn.com
-
 # > IINA
 DOMAIN,dl.iina.io
