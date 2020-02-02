@@ -8,3 +8,7 @@ DOMAIN,download.docker.com
 DOMAIN,yun.zte.cn.com
 # > IINA
 DOMAIN,dl.iina.io
+# > Creative Cloud
+PROCESS-NAME,/Library/Application Support/Adobe*
+PROCESS-NAME,Creative Cloud
+PROCESS-NAME,Adobe_CCXProcess.node
