@@ -17,3 +17,5 @@ PROCESS-NAME,adobe_licensing_helper
 PROCESS-NAME,Setup
 PROCESS-NAME,node
 PROCESS-NAME,ath
+# > FTP
+PROCESS-NAME,Transmit
