@@ -9,6 +9,11 @@ DOMAIN,yun.zte.cn.com
 # > IINA
 DOMAIN,dl.iina.io
 # > Creative Cloud
-PROCESS-NAME,/Library/Application Support/Adobe*
+PROCESS-NAME,Adobe Desktop Service
 PROCESS-NAME,Creative Cloud
 PROCESS-NAME,Adobe_CCXProcess.node
+PROCESS-NAME,Core Sync
+PROCESS-NAME,adobe_licensing_helper
+PROCESS-NAME,Setup
+PROCESS-NAME,node
+PROCESS-NAME,ath
