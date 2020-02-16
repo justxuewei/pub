@@ -35,4 +35,4 @@ DOMAIN-SUFFIX,storage.live.com
 DOMAIN-SUFFIX,sharepoint.com
 
 # > Apple Developer
-DOMAIN,download.developer.apple.com
+DOMAIN-SUFFIX,developer.apple.com
