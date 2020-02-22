@@ -33,6 +33,7 @@ DOMAIN,op.nxw.name
 DOMAIN-SUFFIX,cdn.office.net
 DOMAIN-SUFFIX,storage.live.com
 DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,microsoftonline.com
 
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
