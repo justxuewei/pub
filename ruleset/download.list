@@ -37,6 +37,9 @@ DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,msocsp.com
 DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,svc.ms
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,akamaihd.net
 
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
