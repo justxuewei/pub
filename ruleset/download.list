@@ -41,6 +41,8 @@ DOMAIN-SUFFIX,svc.ms
 DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,akamaihd.net
 DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msocdn.com
+DOMAIN-SUFFIX,windows.net
 
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
