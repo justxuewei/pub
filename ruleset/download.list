@@ -29,20 +29,5 @@ PROCESS-NAME,Transmit
 DOMAIN,filerun.nxw.name
 DOMAIN,op.nxw.name
 
-# > OneDrive Web Download
-DOMAIN-SUFFIX,office.net
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,microsoftonline.com
-DOMAIN-SUFFIX,office.com
-DOMAIN-SUFFIX,msocsp.com
-DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,svc.ms
-DOMAIN-SUFFIX,office365.com
-DOMAIN-SUFFIX,akamaihd.net
-DOMAIN-SUFFIX,msftauth.net
-DOMAIN-SUFFIX,msocdn.com
-DOMAIN-SUFFIX,windows.net
-
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
