@@ -5,7 +5,7 @@
 import subprocess
 
 # networked drivers list, e.g. "smb://your-domain.com/directory"
-NETWORKED_DRIVES = ['smb://nas.i.nxw.name/downloads', 'smb://nas.i.nxw.name/nas', 'smb://nas.i.nxw.name/guest']
+NETWORKED_DRIVES = ['smb://nas.i.nxw.name/downloads', 'smb://nas.i.nxw.name/nas', 'smb://nas.i.nxw.name/localnas']
 
 for s in NETWORKED_DRIVES:
     cmd = "osascript -e 'try' -e 'mount volume \"%s\"' -e 'end try'" % s
