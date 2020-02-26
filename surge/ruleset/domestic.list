@@ -1,8 +1,14 @@
 # > imacso
 DOMAIN-SUFFIX,imacso.com
+
 # > cowtransfer
 DOMAIN-SUFFIX,cowtransfer.com
+
 # > OneIndex
 DOMAIN,od.nxw.name
+
 # > Netease
 DOMAIN-SUFFIX,netease.im
+
+# > filerun reverse proxy on ru
+DOMAIN,filerun.ru.nxw.name
