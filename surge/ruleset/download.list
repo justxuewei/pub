@@ -34,5 +34,5 @@ DOMAIN,fr01.nxw.name
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
 
-# > Docker
-PROCESS-NAME,/Applications/Docker.app/Contents/Resources/bin/com.docker.vpnkit
+# > alpinelinux update
+DOMAIN-SUFFIX,alpinelinux.org
