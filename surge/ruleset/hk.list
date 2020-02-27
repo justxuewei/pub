@@ -1,5 +1,7 @@
 # > mail service
 DOMAIN-SUFFIX,zoho.com
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,yandex.com
 # > vps retailer
 DOMAIN-SUFFIX,cloudcone.com
 DOMAIN-SUFFIX,virtono.com
