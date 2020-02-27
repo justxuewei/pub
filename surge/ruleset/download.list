@@ -33,3 +33,6 @@ DOMAIN,fr01.nxw.name
 
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
+
+# > Docker
+PROCESS-NAME,*docker*
