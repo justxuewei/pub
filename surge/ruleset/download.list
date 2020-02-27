@@ -35,4 +35,4 @@ DOMAIN,fr01.nxw.name
 DOMAIN-SUFFIX,developer.apple.com
 
 # > Docker
-PROCESS-NAME,*docker*
+PROCESS-NAME,/Applications/Docker.app/Contents/Resources/bin/com.docker.vpnkit
