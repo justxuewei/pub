@@ -25,9 +25,11 @@ PROCESS-NAME,ath
 # > FTP
 PROCESS-NAME,Transmit
 
-# > FileRun@FR01
+# > FR01
 DOMAIN,filerun.nxw.name
 DOMAIN,op.nxw.name
+DOMAIN,netdisk.nxw.pub
+DOMAIN,fr01.nxw.name
 
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
