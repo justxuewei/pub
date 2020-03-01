@@ -27,8 +27,6 @@ PROCESS-NAME,ath
 PROCESS-NAME,Transmit
 
 # > FR01
-DOMAIN,filerun.nxw.name
-DOMAIN,op.nxw.name
 DOMAIN,zfile.nxw.pub
 DOMAIN,fr01.nxw.name
 
