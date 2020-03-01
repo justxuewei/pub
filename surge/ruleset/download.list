@@ -26,6 +26,9 @@ PROCESS-NAME,ath
 # > FTP
 PROCESS-NAME,Transmit
 
+# > GitHub Release
+DOMAIN-SUFFIX,amazonaws.com
+
 # > FR01
 DOMAIN,zfile.nxw.pub
 DOMAIN,fr01.nxw.name
