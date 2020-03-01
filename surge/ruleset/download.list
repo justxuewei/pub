@@ -6,6 +6,7 @@ DOMAIN-SUFFIX,tchspt.com
 
 # > docker
 DOMAIN,download.docker.com
+PROCESS-NAME,/Applications/Docker.app/Contents/Resources/bin/com.docker.vpnkit
 
 # > other
 DOMAIN,yun.zte.cn.com
