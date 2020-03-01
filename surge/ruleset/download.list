@@ -26,9 +26,6 @@ PROCESS-NAME,ath
 # > FTP
 PROCESS-NAME,Transmit
 
-# > GitHub Release
-DOMAIN-SUFFIX,amazonaws.com
-
 # > FR01
 DOMAIN,zfile.nxw.pub
 DOMAIN,fr01.nxw.name
@@ -38,3 +35,6 @@ DOMAIN-SUFFIX,developer.apple.com
 
 # > alpinelinux update
 DOMAIN-SUFFIX,alpinelinux.org
+
+# > GitHub Release
+DOMAIN-SUFFIX,s3.amazonaws.com
