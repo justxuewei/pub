@@ -6,7 +6,7 @@ DOMAIN-SUFFIX,tchspt.com
 
 # > docker
 DOMAIN,download.docker.com
-PROCESS-NAME,/Applications/Docker.app/Contents/Resources/bin/com.docker.vpnkit
+PROCESS-NAME,*com.docker.vpnkit
 
 # > github
 PROCESS-NAME,*git-remote-http
