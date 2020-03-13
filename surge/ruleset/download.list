@@ -43,4 +43,4 @@ DOMAIN-SUFFIX,alpinelinux.org
 DOMAIN-SUFFIX,s3.amazonaws.com
 
 # > JetBrians
-PROCESS-NAME,JetBrains Toolbox
+PROCESS-NAME,*jetbrains-toolbox
