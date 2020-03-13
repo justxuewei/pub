@@ -41,3 +41,6 @@ DOMAIN-SUFFIX,alpinelinux.org
 
 # > GitHub Release
 DOMAIN-SUFFIX,s3.amazonaws.com
+
+# > JetBrians
+PROCESS-NAME,JetBrains Toolbox
