@@ -12,3 +12,6 @@ DOMAIN-SUFFIX,netease.im
 
 # > zfile reverse proxy on ru
 DOMAIN,zfile.ru01.nxw.pub
+
+# > ESET
+DOMAIN-SUFFIX,eset.com
