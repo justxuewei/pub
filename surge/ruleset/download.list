@@ -31,7 +31,7 @@ PROCESS-NAME,Transmit
 
 # > FR01
 DOMAIN,zfile.nxw.pub
-DOMAIN,fr01.nxw.name
+DOMAIN,fr01.nxw.pub
 
 # > Apple Developer
 DOMAIN-SUFFIX,developer.apple.com
@@ -39,7 +39,7 @@ DOMAIN-SUFFIX,developer.apple.com
 # > alpinelinux update
 DOMAIN-SUFFIX,alpinelinux.org
 
-# > GitHub Release
+# > Amazon S3
 DOMAIN-SUFFIX,s3.amazonaws.com
 
 # > JetBrians
