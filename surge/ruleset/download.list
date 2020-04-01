@@ -44,3 +44,6 @@ DOMAIN-SUFFIX,s3.amazonaws.com
 
 # > JetBrians
 PROCESS-NAME,*jetbrains-toolbox
+
+# > iMazing
+DOMAIN,downloads.imazing.com
