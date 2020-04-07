@@ -47,3 +47,6 @@ PROCESS-NAME,*jetbrains-toolbox
 
 # > iMazing
 DOMAIN,downloads.imazing.com
+
+# > PDF Expert
+DOMAIN,downloads.pdfexpert.com
