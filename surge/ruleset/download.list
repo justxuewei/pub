@@ -50,3 +50,6 @@ DOMAIN,downloads.imazing.com
 
 # > PDF Expert
 DOMAIN,downloads.pdfexpert.com
+
+# > CowTransfer
+DOMAIN-SUFFIX,cowtransfer.com
