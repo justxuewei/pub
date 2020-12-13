@@ -1,0 +1,6 @@
+#!name=BUPT
+#!desc=Local DNS mapping for BUPT
+
+[Host]
+lab01.bupt.edu.cn = 10.105.240.25
+imac.bupt.edu.cn = 10.210.47.78
