@@ -2,7 +2,7 @@
 #!desc=Local DNS mapping, DNS server for BUPT
 
 [General]
-dns-server = %INSERT% 10.3.9.4, 10.3.9.5
+dns-server = %APPEND% 10.3.9.4, 10.3.9.5
 
 [Host]
 lab01.bupt.edu.cn = 10.105.240.25
