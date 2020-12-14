@@ -1,0 +1,5 @@
+#!name=BUPT-Wifi
+#!desc=DNS servers for BUPT
+
+[General]
+dns-server = %INSERT% 10.3.9.4, 10.3.9.5, system, 114.114.114.114, 114.114.115.115
