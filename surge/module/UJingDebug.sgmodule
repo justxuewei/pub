@@ -1,5 +1,9 @@
 #!name=UJing
 #!desc=UJing MitM for API Debug
 
+[General]
+force-http-engine-hosts = %INSERT% *.ujing.online, *.ujing.online:4443
+
 [MITM]
+tcp-connection = true
 hostname = %INSERT% *.ujing.online, *.ujing.online:4443
