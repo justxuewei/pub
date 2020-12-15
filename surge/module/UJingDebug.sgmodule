@@ -1,0 +1,5 @@
+#!name=UJing
+#!desc=UJing MitM for API Debug
+
+[MITM]
+hostname = %INSERT% *.ujing.online, *.ujing.online:4443
