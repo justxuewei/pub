@@ -5,7 +5,7 @@
 dns-server = %APPEND% 10.3.9.4, 10.3.9.5
 
 [Host]
-lab01.bupt.edu.cn = 10.105.240.25
-imac.bupt.edu.cn = 10.210.47.78
+lab.bupt.local = 10.105.240.31
+*.nas.local = 10.210.47.66
 *.bupt.edu.cn = server:10.3.9.4
 *.byr.cn = server:10.3.9.4
