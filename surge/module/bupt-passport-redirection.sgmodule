@@ -1,6 +1,0 @@
-#!name=BUPT Passport Redirections
-#!desc=北邮出校码跳转
-
-[URL Rewrite]
-
-^https?:\/\/service.bupt\.edu\.cn\/ http://81.70.240.157:10985/?type=%E5%85%A5&avatar=https://imgservice.bupt.edu.cn/image/1891/3782107.jpg 302
