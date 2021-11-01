@@ -1,0 +1,5 @@
+#!name=Disable Proxy at ByteDance
+#!desc=在 ByteDance 停止使用 proxy
+
+[SSID Setting]
+"ByteDance Inc" suspend=true
