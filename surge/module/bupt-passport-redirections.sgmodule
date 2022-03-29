@@ -3,7 +3,7 @@
 
 [Host]
 
-service.bupt.edu.cn = 81.70.240.157
+service.bupt.edu.cn = 172.93.220.165
 
 [URL Rewrite]
 
