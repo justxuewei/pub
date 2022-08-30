@@ -12,3 +12,9 @@ DOMAIN-SUFFIX,eset.com
 
 # > cloudreve on jp01
 DOMAIN,cloudreve.nxw.pub
+
+# > Ali products
+PROCESS-NAME,/Applications/AliLang.app/Contents/Resources/nms/alimeeting/darwin/alimeeting.app/Contents/MacOS/alimeeting
+PROCESS-NAME,/Applications/AliLang.app/Contents/Frameworks/AliLang Helper.app/Contents/MacOS/AliLang Helper
+PROCESS-NAME,alimeeting
+PROCESS-NAME,AliLang Helper
