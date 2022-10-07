@@ -3,17 +3,17 @@
 
 [Host]
 
-service.bupt.edu.cn = 172.93.220.165
+service.bupt.edu.cn = 114.116.104.120
 
 [Rule]
 
 DOMAIN,service.bupt.edu.cn,DIRECT
-IP-CIDR,172.93.220.165/32,DIRECT,no-resolve
+IP-CIDR,114.116.104.120/32,DIRECT,no-resolve
 
 [URL Rewrite]
 
-^https?:\/\/service\.bupt\.edu\.cn\/v2\/matter\/m_start\?.*id=568.*type=0.* http://service.bupt.edu.cn:10985/?type=%E5%85%A5&avatar=https://imgservice.bupt.edu.cn/image/1891/3782107.jpg&name=%E7%89%9B%E5%AD%A6%E8%94%9A&school=%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%EF%BC%88%E5%9B%BD%E5%AE%B6%E7%A4%BA%E8%8C%83%E6%80%A7%E8%BD%AF%E4%BB%B6%E5%AD%A6%E9%99%A2%EF%BC%89 302
-^https?:\/\/service\.bupt\.edu\.cn\/v2\/matter\/m_start\?.*id=568.*type=1.* http://service.bupt.edu.cn:10985/?type=%E5%87%BA&avatar=https://imgservice.bupt.edu.cn/image/1891/3782107.jpg&name=%E7%89%9B%E5%AD%A6%E8%94%9A&school=%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%EF%BC%88%E5%9B%BD%E5%AE%B6%E7%A4%BA%E8%8C%83%E6%80%A7%E8%BD%AF%E4%BB%B6%E5%AD%A6%E9%99%A2%EF%BC%89 302
+^https?:\/\/service\.bupt\.edu\.cn\/v2\/matter\/m_start\?.*id=568.*type=0.* http://service.bupt.edu.cn:10985/?type=%E5%85%A5&avatar=https%3A%2F%2Fimgservice.bupt.edu.cn%2Fimage%2F1891%2F3782107_uxpwzo79cmil.jpg&name=%E7%89%9B%E5%AD%A6%E8%94%9A&school=%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%EF%BC%88%E5%9B%BD%E5%AE%B6%E7%A4%BA%E8%8C%83%E6%80%A7%E8%BD%AF%E4%BB%B6%E5%AD%A6%E9%99%A2%EF%BC%89 302
+^https?:\/\/service\.bupt\.edu\.cn\/v2\/matter\/m_start\?.*id=568.*type=1.* http://service.bupt.edu.cn:10985/?type=%E5%87%BA&avatar=https%3A%2F%2Fimgservice.bupt.edu.cn%2Fimage%2F1891%2F3782107_uxpwzo79cmil.jpg&name=%E7%89%9B%E5%AD%A6%E8%94%9A&school=%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%EF%BC%88%E5%9B%BD%E5%AE%B6%E7%A4%BA%E8%8C%83%E6%80%A7%E8%BD%AF%E4%BB%B6%E5%AD%A6%E9%99%A2%EF%BC%89 302
 
 
 [MITM]
