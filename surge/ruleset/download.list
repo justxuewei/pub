@@ -1,40 +1,8 @@
-# > ubuntu download mirror
-DOMAIN,mirror.sov.uk.goscomb.net
-
-# > for macOS 10.13.6 dmg downloads
-DOMAIN-SUFFIX,tchspt.com
-
-# > docker
-DOMAIN,download.docker.com
-PROCESS-NAME,*com.docker.vpnkit
-
 # > github
 PROCESS-NAME,*git-remote-http
 
-# > other
-DOMAIN,yun.zte.cn.com
-# > IINA
-DOMAIN,dl.iina.io
-
-# > Creative Cloud
-PROCESS-NAME,Adobe Desktop Service
-PROCESS-NAME,Creative Cloud
-PROCESS-NAME,Adobe_CCXProcess.node
-PROCESS-NAME,Core Sync
-PROCESS-NAME,adobe_licensing_helper
-PROCESS-NAME,Setup
-PROCESS-NAME,node
-PROCESS-NAME,ath
-
 # > FTP
 PROCESS-NAME,Transmit
-
-# > FR01
-DOMAIN,zfile.nxw.pub
-DOMAIN,fr01.nxw.pub
-
-# > Apple Developer
-DOMAIN-SUFFIX,developer.apple.com
 
 # > alpinelinux update
 DOMAIN-SUFFIX,alpinelinux.org
@@ -45,11 +13,5 @@ DOMAIN-SUFFIX,s3.amazonaws.com
 # > JetBrians
 PROCESS-NAME,*jetbrains-toolbox
 
-# > iMazing
-DOMAIN,downloads.imazing.com
-
-# > PDF Expert
-DOMAIN,downloads.pdfexpert.com
-
-# > CowTransfer
-DOMAIN-SUFFIX,cowtransfer.com
+# > qbit
+DOMAIN-SUFFIX,dl.nxw.name
