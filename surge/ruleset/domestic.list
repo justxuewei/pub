@@ -1,17 +1,15 @@
 # > imacso
 DOMAIN-SUFFIX,imacso.com
 
-# > OneIndex
-DOMAIN,od.nxw.name
-
 # > Netease
 DOMAIN-SUFFIX,netease.im
 
 # > ESET
 DOMAIN-SUFFIX,eset.com
 
-# > cloudreve on jp01
-DOMAIN,cloudreve.nxw.pub
+# > Greencloudvps
+DOMAIN,trojan-jp.nxw.name
+IP-CIDR,172.93.220.165/32
 
 # > Ali products
 PROCESS-NAME,/Applications/AliLang.app/Contents/Resources/nms/alimeeting/darwin/alimeeting.app/Contents/MacOS/alimeeting
