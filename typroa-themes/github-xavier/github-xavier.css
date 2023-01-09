@@ -3,42 +3,14 @@
     --control-text-color: #777;
 }
 
-@font-face {
-    font-family: 'JetBrainsMono';
-    font-style: normal;
-    font-weight: normal;
-    src: local('JetBrainsMono Regular'),url('./github-xavier/JetBrainsMono-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'JetBrainsMono';
-    font-style: italic;
-    font-weight: normal;
-    src: local('JetBrainsMono Italic'),url('./github-xavier/JetBrainsMono-Italic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'JetBrainsMono';
-    font-style: normal;
-    font-weight: bold;
-    src: local('JetBrainsMono Bold'),url('./github-xavier/JetBrainsMono-Bold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'JetBrainsMono';
-    font-style: italic;
-    font-weight: bold;
-    src: local('JetBrainsMono Bold Italic'),url('./github-xavier/JetBrainsMono-Bold-Italic.woff') format('woff');
-}
-
 html {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 body {
-    font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     color: rgb(51, 51, 51);
-    line-height: 1.9;
+    line-height: 1.5;
 }
 
 #write {
@@ -46,7 +18,7 @@ body {
   	margin: 0 auto;
   	padding: 30px;
     padding-bottom: 100px;
-    font-family: "JetBrainsMono","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 #write > ul:first-child,
 #write > ol:first-child{
@@ -66,7 +38,7 @@ h6 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1.25;
     cursor: text;
     font-family: "Segoe UI", "Arial", sans-serif;
 }
@@ -103,19 +75,16 @@ h6 code {
     font-size: inherit;
 }
 h1 {
-    font-size: 2.25em;
-    line-height: 1.2;
+    font-size: 2em;
 }
 h2 {
-    font-size: 1.75em;
-    line-height: 1.225;
+    font-size: 1.5em;
 }
 h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
+    font-size: 1.25em;
 }
 h4 {
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 h5 {
     font-size: 1em;
@@ -129,8 +98,10 @@ blockquote,
 ul,
 ol,
 dl,
-table{
-    margin: 0.8em 0;
+table,
+pre,
+details{
+    margin-bottom: 16px;
 }
 li>ol,
 li>ul {
@@ -215,27 +186,25 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-    border: 1px solid #e7eaed;
     background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-    font-family: "JetBrainsMono";
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 85%;
+    line-height: 1.5;
+    font-family: "Menlo";
 }
 
 code {
     background-color: #f3f4f4;
-    padding: 0 2px 0 2px;
-    margin-left: .2rem;
-    margin-right: .2rem;
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+    white-space: break-spaces;
 }
 
 .md-fences {
     margin-bottom: 15px;
     margin-top: 15px;
-    padding-top: 8px;
-    padding-bottom: 6px;
+    padding: 16px;
 }
 
 
@@ -245,7 +214,7 @@ code {
 
 @media print {
     html {
-        font-size: 13px;
+        font-size: 17px;
     }
     table,
     pre {
