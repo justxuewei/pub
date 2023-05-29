@@ -1,7 +1,0 @@
-# > proxy edited by xavier niu
-DOMAIN-SUFFIX,v2ex.com
-DOMAIN-SUFFIX,akamaihd.net
-# > AmazonAWS
-DOMAIN-SUFFIX,s3.amazonaws.com
-# Google Fonts
-DOMAIN-SUFFIX,googleapis.com
