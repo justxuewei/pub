@@ -7,6 +7,7 @@
 // @match        https://github.com/kata-containers/kata-containers/pull/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
+// @license      Apache-2.0
 // ==/UserScript==
 
 var hidden = false;
