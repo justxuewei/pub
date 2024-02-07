@@ -7,7 +7,6 @@
 // @match        https://github.com/kata-containers/kata-containers/pull/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
-// @license      Apache-2.0
 // ==/UserScript==
 
 var hidden = false;
@@ -28,7 +27,7 @@ function filterButtonOnClick() {
                 return;
             }
 
-            var successful = statusElement.textContent.includes('Successful in');
+            var successful = statusElement.textContent.includes('Successful in') || statusElement.textContent.includes('Build finished');
             var required = detailsElement.textContent.includes('Required');
 
             if (successful || !required) {
@@ -72,7 +71,8 @@ function loopWithDelay() {
         if (loaded) {
             return;
         }
-        if (count == 10) {
+        // retry 60 times (1 min)
+        if (count == 60) {
             return;
         }
         console.log("Iteration: " + count);
