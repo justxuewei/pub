@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         GitHub Actions Filter Button
 // @namespace    http://www.nxw.name
-// @version      2024-02-06
+// @version      2024-02-07
 // @description  Filter GitHub Actions which is not passed and quired
 // @author       Xuewei Niu
 // @match        https://github.com/kata-containers/kata-containers/pull/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
+// @license      Apache-2.0
 // ==/UserScript==
 
 var hidden = false;
