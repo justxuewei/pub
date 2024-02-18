@@ -1,0 +1,6 @@
+#!name=Weixin proxy
+#!desc=微信使用 HK 代理访问
+
+[Rule]
+
+DOMAIN,service.bupt.edu.cn,HK
