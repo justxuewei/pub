@@ -1,6 +1,0 @@
-#!name=Wechat over HK Proxy
-#!desc=微信使用 HK 代理访问，规避星点
-
-[Rule]
-
-DOMAIN,*.qq.com,HK
