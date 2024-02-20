@@ -31,7 +31,7 @@
         background: transparent!important;
     }
     .bubble_cont .plain {
-        padding: 10px!important
+        padding: 8px 12px!important
     }
     .you .bubble_cont {
         border: 0;
@@ -132,6 +132,7 @@
         background: #dee1e6!important;
         user-select: none;
         height: 768px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Source Han Sans CN, sans-serif !important;
     }
     .copyright {
         display: none
