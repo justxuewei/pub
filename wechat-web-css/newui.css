@@ -152,10 +152,6 @@
     .desc.ng-scope {
         display: none
     }
-    .ext,
-    .msg {
-        opacity: .5
-    }
     .box_ft {
         margin: 0!important;
         padding-right: 10px;
@@ -165,9 +161,6 @@
     }
     .web_wechat_screencut {
         display: none;
-    }
-    #tool_bar {
-        opacity: .6
     }
     .main {
         padding-top: 0;
