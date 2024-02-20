@@ -18,11 +18,11 @@
         display: none
     }
     .chat_item.top {
-        background: #eeeeee
+        background: #fff;
     }
     .panel.give_me {
-        background: #eee;
-        border-right: 1px solid #d6d6d6;
+        background: #fff;
+        border-right: 1px solid #f1f1f1;
     }
     #chatArea {
         background: #dee1e6;
@@ -35,11 +35,11 @@
     }
     .you .bubble_cont {
         border: 0;
-        background: white;
+        background: #f1f1f1;
         border-radius: 0 5px 5px 5px;
     }
     .me .bubble_cont {
-        background: #fff;
+        background: #f1f1f1;
         border-radius: 5px 0 5px 5px;
         color: #000;
     }
@@ -79,7 +79,7 @@
     }
     .chat_item.active {
         border-radius: 7px 0 0 7px;
-        background: #fff!important;
+        background: #f1f1f1!important;
         margin-left: 5px;
         padding-left: 13px;
     }
@@ -180,10 +180,10 @@
     }
     .scroll-wrapper.box_bd.chat_bd.scrollbar-dynamic {
         top: 0;
-        background: #eeeeee
+        background: #fff
     }
     .box_ft.ng-scope {
-        background: #eeeeee!important;
+        background: #fff !important;
         display: block!important
     }
     .search_bar .mmpop {
