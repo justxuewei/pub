@@ -1,4 +1,7 @@
 @-moz-document domain("wx.qq.com") {
+    .chat .box_ft {
+        border-top: 1px solid #f1f1f1;
+    }
     .chat_item .avatar .icon {
         color: #fff!important
     }
