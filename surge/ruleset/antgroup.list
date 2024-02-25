@@ -18,4 +18,4 @@ DOMAIN-SUFFIX,aliyuncs.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,dingtalkapps.com
 # Network segment for office network
-IP-CIDR,30.30.0.0/16
+IP-CIDR,30.30.0.0/16,no-resolve
