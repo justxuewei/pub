@@ -34,7 +34,12 @@
         background: transparent!important;
     }
     .bubble_cont .plain {
-        padding: 8px 12px!important
+        padding: 8px 12px !important;
+        user-select: text !important;
+        cursor: text !important;
+    }
+    .bubble_cont .plain pre {
+        cursor: text !important;
     }
     .you .bubble_cont {
         border: 0;
