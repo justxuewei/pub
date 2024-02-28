@@ -29,6 +29,7 @@
     }
     #chatArea {
         background: #dee1e6;
+        user-select: text !important;
     }
     .bubble {
         background: transparent!important;
