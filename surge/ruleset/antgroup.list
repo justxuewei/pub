@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,aliyuncs.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,dingtalkapps.com
 DOMAIN-SUFFIX,tbsite.net
+DOMAIN-SUFFIX,alibaba.net
 # Network segment for office network
 IP-CIDR,30.30.0.0/16,no-resolve
 IP-CIDR,30.172.0.0/16,no-resolve
