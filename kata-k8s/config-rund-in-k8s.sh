@@ -29,6 +29,7 @@ if [ -z "$(grep "$RUND_PATTERN" $CONTAINERD_CONFIG_PATH)" ]; then
   sed -i '/\[plugins\."io\.containerd\.grpc\.v1\.cri"\.containerd\.runtimes\]/a\
         \
         [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.rund]\
+          runtime_type = "io.containerd.rund.v2"\
           pod_annotations = ["io.katacontainers.*"]\
           privileged_without_host_devices = true\
           privileged_without_host_devices_all_devices_allowed = true' $CONTAINERD_CONFIG_PATH
