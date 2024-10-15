@@ -18,7 +18,7 @@ if [ ! -f "$SHARED_VOLUME/$GUEST_IMG_NAME" ]; then
 fi
 
 if [ ! -f "$SHARED_VOLUME/$KERNEL_NAME" ]; then
-  echo "$GUEST_IMG_NAME not found"
+  echo "$KERNEL_NAME not found"
   exit 1
 fi
 
