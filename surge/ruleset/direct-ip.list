@@ -1,3 +1,2 @@
-# Network segment for office network
-IP-CIDR,30.30.0.0/16,no-resolve
-IP-CIDR,30.172.0.0/16,no-resolve
+# Ant Group office network segment
+IP-CIDR,30.0.0.0/8
